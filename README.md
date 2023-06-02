@@ -1,6 +1,6 @@
 # Bus Simulation
 
-## Project Name and Author Information
+## Project and Author Information
 
 Project: a simulation of a bus route  
 Primary file: BusSim.java  
