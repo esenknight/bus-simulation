@@ -2,16 +2,16 @@
 
 ## Project Name and Author Information
 
-Project: a simulation of a bus route
-Primary file: BusSim.java
-Secondary files:  Bus.java, BusEvent.java, ExpressBusEvent.java, Rider.java, RiderEvent.java, Stop.java, and Statistics.java
-Supporting files: Event.java, PQInterface.java, PQ.java, Q.java, Q2.java, Segment.java
-Author of primary and secondary files: S. N. Knight
-Author of supporting files: Chris Dovolis
+Project: a simulation of a bus route  
+Primary file: BusSim.java  
+Secondary files:  Bus.java, BusEvent.java, ExpressBusEvent.java, Rider.java, RiderEvent.java, Stop.java, and Statistics.java  
+Supporting files: Event.java, PQInterface.java, PQ.java, Q.java, Q2.java, Segment.java  
+Author of primary and secondary files: S. N. Knight  
+Author of supporting files: Chris Dovolis  
 
 ## Running the Project
 
-Each trial must completed separately. 
+Each trial must completed separately.  
 1. Set the desired values of the simulation parameters as desired (load, run time, number and type of buses).
 2. Alter the title of the file to which the statistics will be written to accordingly. Alternatively, the code that writes to a file may be commented out so that the results are only printed to the terminal.
 3. Compile and run the program.
@@ -20,7 +20,7 @@ Each trial must completed separately.
 
 ### BusSim
 
-Contains the instance of Statistics (stats), the PQ (agenda), simulation parameters, etc. 
+Contains the instance of Statistics (stats), the PQ (agenda), simulation parameters, etc.   
 Runs the simulation and records the results
 
 ### Bus
@@ -37,7 +37,7 @@ Simulates the actions of express buses: boarding riders, debording riders, depar
 
 ### Rider
 
-Contains the boarding stop, destination stop, and arrival time of each rider
+Contains the boarding stop, destination stop, and arrival time of each rider  
 Randomly determines destination stop within the constructor
 
 ### RiderEvent
@@ -60,13 +60,13 @@ PQ agenda in BusSim : only needs one instance of each event queued at any given 
 
 ### Queue
 
-Q2 riderList in Bus : efficient to board new riders O(1)
+Q2 riderList in Bus : efficient to board new riders O(1)  
 Q2 riderWaitLine : logically models function of a wait line, efficient rider arrivals O(1), efficient when riders leave to board a regular bus O(1)
 
 ### Array
 
-int[] eastboundStopSelect in Rider : finite quantity of data, frequent lookups
-int[] westboundStopSelect in Rider : finite quantity of data, frequent lookups
+int[] eastboundStopSelect in Rider : finite quantity of data, frequent lookups  
+int[] westboundStopSelect in Rider : finite quantity of data, frequent lookups  
 double[] arrivalFrequencyVariations : finite quantity of data, frequent lookups
 
 ## Known Issues
